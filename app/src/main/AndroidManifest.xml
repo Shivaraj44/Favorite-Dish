@@ -12,14 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FavDish">
         <activity
-
-            android:name=".Views.Activites.Add_update_Activity"
+            android:name=".Views.Activites.Add_Update_DishActivity"
             android:exported="true"
             android:theme="@style/Theme.FavDish.NoActionBar"
+            android:configChanges="orientation"
             />
         <activity
             android:name=".Views.Activites.SplashActivity"
             android:exported="true"
+
             android:theme="@style/Theme.FavDish.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

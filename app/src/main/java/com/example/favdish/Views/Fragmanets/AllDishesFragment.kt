@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.favdish.R
 import com.example.favdish.ViewModels.HomeViewModel
-import com.example.favdish.Views.Activites.Add_update_Activity
+import com.example.favdish.Views.Activites.Add_Update_DishActivity
 import com.example.favdish.databinding.FragmentAllDishesBinding
 
 
@@ -52,7 +52,7 @@ class AllDishesFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.itemId==R.id.all_dishes_menu) startActivity(Intent(  requireActivity(),Add_update_Activity::class.java))
+        if(item.itemId==R.id.all_dishes_menu) startActivity(Intent(  requireActivity(),Add_Update_DishActivity::class.java))
         return super.onOptionsItemSelected(item)
     }
 }
